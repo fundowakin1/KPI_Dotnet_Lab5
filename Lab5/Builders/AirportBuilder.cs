@@ -24,7 +24,7 @@ namespace Lab5.Builders
                 _airport.Runways.Add(new Runway(i));
         }
 
-        public void BuildPlane(int quantity, Ilogger logger)
+        public void BuildPlane(int quantity, ILogger logger)
         {
             for (var i = 0; i < quantity; i++)
                 _airport.Planes.Add(new Plane(i, logger));

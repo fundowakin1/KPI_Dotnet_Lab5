@@ -1,12 +1,10 @@
 ﻿using System.Text;
 using Lab5.DispatcherServices;
-using Lab5.Loggers;
 
 namespace Lab5.Entities
 {
     public class Airport
     {
-        public string Name { get; set; }
         public List<Terminal> Terminals { get; set; } = new List<Terminal>();
         public List<Runway> Runways { get; set; } = new List<Runway>();
         public List<Plane> Planes { get; set; } = new List<Plane>();

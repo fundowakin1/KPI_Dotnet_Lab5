@@ -6,8 +6,8 @@ namespace Lab5.DispatcherServices
     public class DispatcherService
     {
         public Airport Airport { get; }
-        private readonly Ilogger _logger;
-        public DispatcherService(Airport airport, Ilogger logger)
+        private readonly ILogger _logger;
+        public DispatcherService(Airport airport, ILogger logger)
         {
             Airport = airport;
             _logger = logger;

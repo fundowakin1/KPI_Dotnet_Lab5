@@ -7,12 +7,12 @@ namespace Lab5.Entities
 {
     public class Plane
     {
-        private readonly Ilogger _logger;
+        private readonly ILogger _logger;
         private IDispatcher _dispatcher;
         public int Id { get; set; }
         public PlaneState State { get; set; }
         public Stack<PlaneState> PlaneFlight { get; set; }
-        public Plane(int id, Ilogger logger)
+        public Plane(int id, ILogger logger)
         {
             _logger = logger;
             Id = id;

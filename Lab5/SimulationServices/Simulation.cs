@@ -7,8 +7,8 @@ namespace Lab5.SimulationServices
     {
         private readonly Airport _airport;
         private readonly EventGenerator _eventGenerator;
-        private readonly Ilogger _logger;
-        public Simulation(Airport airport, Ilogger logger)
+        private readonly ILogger _logger;
+        public Simulation(Airport airport, ILogger logger)
         {
             _airport = airport;
             _eventGenerator = new EventGenerator(airport);

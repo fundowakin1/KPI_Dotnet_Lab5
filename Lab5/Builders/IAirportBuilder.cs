@@ -8,7 +8,7 @@ namespace Lab5.Builders
     {
         public Airport GetAirport();
         public void BuildRunway(int quantity);
-        public void BuildPlane(int quantity, Ilogger logger);
+        public void BuildPlane(int quantity, ILogger logger);
         public void BuildTerminal(int quantity);
         public void ChangeTerminalOccupation(Plane plane, Terminal terminal);
         public void ChangeRunwayOccupation(Plane plane, Runway runway);

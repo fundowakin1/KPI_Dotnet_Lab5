@@ -1,6 +1,6 @@
 ﻿namespace Lab5.Loggers
 {
-    public interface Ilogger
+    public interface ILogger
     {
         void Info(string message);
     }
